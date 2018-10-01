@@ -3,11 +3,11 @@ package lesson2.task2;
 /**
  * Created by Mikhail_Kuchugurin on 07-Jun-18.
  */
-public class Cooker extends HomeAppliances implements TurnOn {
+public class Cooker extends HomeAppliances implements TurnOnElectricity {
     public Cooker(int width, int height, int powerConsumption, String name) {
         super(width, height, powerConsumption, name);
     }
-    Kitchen.Maker maker = Kitchen.Maker.IKEA;
+    Kitchen.Producer producer = Kitchen.Producer.BOSH;
 
 
     public void isHot(){

@@ -1,21 +1,22 @@
 package lesson2.task2;
 
-import lesson2.task2.Kitchen.Maker;
+import lesson2.task2.Kitchen.Producer;
 
 /**
  * Created by Mikhail_Kuchugurin on 07-Jun-18.
  */
-public class Fridge extends HomeAppliances implements TurnOn {
+
+public class Fridge extends HomeAppliances implements TurnOnElectricity {
     public Fridge(int width, int height, int powerConsumption, String name) {
         super(width, height, powerConsumption, name);
     }
-    Maker maker = Maker.BOSH;
 
     int volume;
 
     public void setVolume(int volume) {
         this.volume = volume;
     }
+
 
     @Override
     public boolean isTurnOn() {

@@ -7,6 +7,7 @@ public class HomeAppliances {
     private int width;
     private int height;
     private int powerConsumption;
+    @MaxNameLength
     private String name;
 
     public HomeAppliances(int width, int height, int powerConsumption, String name) {
@@ -15,7 +16,6 @@ public class HomeAppliances {
         this.powerConsumption = powerConsumption;
         this.name = name;
     }
-
 
     public int getWidth() {
         return width;
@@ -32,6 +32,7 @@ public class HomeAppliances {
     public String getName() {
         return name;
     }
+
 
 
     @Override
